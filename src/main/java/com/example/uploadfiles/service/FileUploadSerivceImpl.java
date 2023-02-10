@@ -141,7 +141,7 @@ public class FileUploadSerivceImpl implements FileUploadService {
                 for (int pageNumber = 0; pageNumber < document.getNumberOfPages(); ++pageNumber) {
                     BufferedImage bim = pdfRenderer.renderImage(pageNumber);
 
-                    String destDir = rootPath + fileName + "_" + pageNumber + ".jpg";
+                    String destDir = rootPath + "/" + fileName + "_" + pageNumber + ".jpg";
 
                     ImageIO.write(bim, "jpg", new File(destDir));
                 }
