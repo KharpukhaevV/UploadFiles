@@ -62,9 +62,9 @@ public class FileUploadSerivceImpl implements FileUploadService {
                     fileName.toLowerCase().contains("ods")) {
                 Files.createDirectories(path);
                 Path filePath = path.resolve(fileName);
-                Files.copy(file.getInputStream(), filePath);
+//                Files.copy(file.getInputStream(), filePath);
                 if (fileName.toLowerCase().contains("pdf")){
-                    convertPDFtoJPG(filePath + "/" + fileName, filePath.toString());
+                    convertPDFtoJPG(filePath.toString(), filePath.getParent().toString());
                 }
             }
 
@@ -141,9 +141,9 @@ public class FileUploadSerivceImpl implements FileUploadService {
                 for (int pageNumber = 0; pageNumber < document.getNumberOfPages(); ++pageNumber) {
                     BufferedImage bim = pdfRenderer.renderImage(pageNumber);
 
-                    String destDir = rootPath + fileName + "_" + pageNumber + ".png";
+                    String destDir = rootPath + fileName + "_" + pageNumber + ".jpg";
 
-                    ImageIO.write(bim, "png", new File(destDir));
+                    ImageIO.write(bim, "jpg", new File(destDir));
                 }
 
                 document.close();
