@@ -58,8 +58,24 @@ class UploadImageComponent extends Component {
     render() {
         return (
             <div className='row'>
+                <h4>{this.state.path}</h4>
                 <div className='row'>
-                    <div className='card col-md-6 offset-md-3 mt-5'>
+                    {this.state.fileUploaded ?
+                        <div className='card col-6'>
+                            <h3>{this.state.message}</h3>
+                        </div>:
+                        <div></div>
+                    }
+                    <div className='card col-7'>
+                        <div className="spacing">
+                            {this.state.tree != null ?
+                                <Directory handlePath={this.handlePath} files={this.state.tree} /> :
+                                <div><h3>Каталог не загружен</h3></div>
+                            }
+
+                        </div>
+                    </div>
+                    <div className='card col-md-5'>
                         <div className='card-body'>
                             <form onSubmit={this.onUpload}>
                                 <div>
@@ -71,25 +87,6 @@ class UploadImageComponent extends Component {
                                         disabled={!this.state.files}>Загрузить
                                 </button>
                             </form>
-                        </div>
-                    </div>
-                </div>
-                {this.state.fileUploaded ?
-                    <div className='row'>
-                        <div className='card col-md-6 offset-md-3 mt-5'>
-                            <h3>{this.state.message}</h3>
-                        </div>
-                    </div> :
-                    <div></div>
-                }
-                <div className='row'>
-                    <div className='card col-md-6 offset-md-3 mt-5'>
-                        <div className="spacing">
-                            {this.state.tree != null ?
-                                <Directory handlePath={this.handlePath} files={this.state.tree} /> :
-                                <div><h3>Каталог не загружен</h3></div>
-                            }
-
                         </div>
                     </div>
                 </div>
