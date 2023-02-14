@@ -1,16 +1,18 @@
 import React from "react";
 import { useState } from "react";
 
-const Directory = ({ files }) => {
+const Directory = ({ files, handlePath }) => {
     const [isExpanded, toggleExpanded] = useState(false);
+
 
     if (files.type === 'folder') {
         return (
             <div className="folder">
-                <h2 className="folder-title" onClick={() => toggleExpanded(!isExpanded)}>{files.name}</h2><br />
+                <h2 className="folder-title" onClick={() => toggleExpanded(!isExpanded)} onChange={() => handlePath(files.location)}>{files.name}</h2><br />
                 {
-                    isExpanded && files.items.map((items) => <Directory files={items} />)
+                    isExpanded && files.items.map((items) => <Directory handlePath={handlePath} files={items} />)
                 }
+                <button onClick={() => handlePath(files.location)}>Выбрать</button>
             </div>
         )
     }

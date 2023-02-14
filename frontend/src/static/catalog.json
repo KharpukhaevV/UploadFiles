@@ -15940,20 +15940,25 @@
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера",
         "type" : "folder",
         "items" : [ {
+          "name" : "ПХ.06.23.01.630 - Установка вибратора_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/ПХ.06.23.01.630 - Установка вибратора_0.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
           "name" : "Электросхема",
           "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/Электросхема",
           "type" : "folder",
           "items" : [ {
-            "name" : "Вибромотор.pdf",
-            "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/Электросхема/Вибромотор.pdf",
+            "name" : "Вибромотор_1.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/Электросхема/Вибромотор_1.jpg",
+            "type" : "file",
+            "items" : null
+          }, {
+            "name" : "Вибромотор_0.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/Электросхема/Вибромотор_0.jpg",
             "type" : "file",
             "items" : null
           } ]
-        }, {
-          "name" : "ПХ.06.23.01.630 - Установка вибратора.pdf",
-          "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/ПХ.06.23.01.630 - Установка вибратора.pdf",
-          "type" : "file",
-          "items" : null
         } ]
       }, {
         "name" : "ДО.02 - Датчик скорости ленты Field-IQ (Т2)",
@@ -16050,6 +16055,41 @@
             "items" : null
           } ]
         } ]
+      } ]
+    } ]
+  }, {
+    "name" : "10.1-01",
+    "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01",
+    "type" : "folder",
+    "items" : [ {
+      "name" : "10.1-01 Система охлаждения (Т3).ods",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01 Система охлаждения (Т3).ods",
+      "type" : "file",
+      "items" : null
+    }, {
+      "name" : "10.1-01",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "10.1-01 Система охлаждения (Т3).ods",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3).ods",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "10.1-01 Система охлаждения (Т3)_1.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3)_1.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "10.1-01 Система охлаждения (Т3)_2.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3)_2.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "10.1-01 Система охлаждения (Т3)_0.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3)_0.jpg",
+        "type" : "file",
+        "items" : null
       } ]
     } ]
   }, {

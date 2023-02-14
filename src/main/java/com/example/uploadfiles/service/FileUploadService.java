@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface FileUploadService {
 
-  public FileUploadResponse uploadFile(MultipartFile file) throws IOException;
+  public FileUploadResponse uploadFile(MultipartFile file, String path) throws IOException;
 
   public Resource fetchFileAsResource(String fileName) throws FileNotFoundException;
 

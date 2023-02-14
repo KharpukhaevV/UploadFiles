@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {Navigate} from 'react-router-dom';
 import FileService from '../services/FileService';
-import Basic from './upload.component';
-import {useDropzone} from "react-dropzone";
-import Directiry from "./Directiry";
+import Directory from "./Directory";
 import catalog from "../static/catalog.json"
 
 
@@ -12,10 +10,20 @@ class UploadImageComponent extends Component {
         super(props);
         this.state = {
             files: null,
-            fileUploaded: null
+            fileUploaded: null,
+            path: '',
+            tree: null,
+            message: ''
         }
     }
 
+    handlePath = (pathValue) => {
+        this.setState({path: pathValue})
+        this.setState({
+            path: pathValue
+        })
+        console.log(pathValue)
+    }
 
     onFileChange = (event) => {
         this.setState({
@@ -23,6 +31,11 @@ class UploadImageComponent extends Component {
         });
     }
 
+    componentDidMount = () => {
+        FileService.updateTree().then((response) => {
+            this.setState({ tree: response.data });
+        });
+    }
 
     onUpload = (event) => {
         event.preventDefault();
@@ -31,20 +44,18 @@ class UploadImageComponent extends Component {
         for (const key of Object.keys(this.state.files)) {
             formData.append('files', this.state.files[key]);
         }
+        formData.append('path', this.state.path)
 
         FileService.uploadImage(formData).then((response) => {
             console.log(response.data);
             this.setState({fileUploaded: true});
+            this.setState({message: response.data})
         }).catch(error => {
             console.log(error);
         });
     }
 
     render() {
-        if (this.state.fileUploaded) {
-            return <Navigate to="/my-images" replace={true}/>;
-        }
-
         return (
             <div className='row'>
                 <div className='row'>
@@ -63,10 +74,22 @@ class UploadImageComponent extends Component {
                         </div>
                     </div>
                 </div>
+                {this.state.fileUploaded ?
+                    <div className='row'>
+                        <div className='card col-md-6 offset-md-3 mt-5'>
+                            <h3>{this.state.message}</h3>
+                        </div>
+                    </div> :
+                    <div></div>
+                }
                 <div className='row'>
                     <div className='card col-md-6 offset-md-3 mt-5'>
                         <div className="spacing">
-                            <Directiry files={catalog} />
+                            {this.state.tree != null ?
+                                <Directory handlePath={this.handlePath} files={this.state.tree} /> :
+                                <div><h3>Каталог не загружен</h3></div>
+                            }
+
                         </div>
                     </div>
                 </div>

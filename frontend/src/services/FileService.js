@@ -10,6 +10,10 @@ class FileService {
     uploadImage(fileFormData){
         return axios.post(BASE_URL+'/upload', fileFormData);
     }
+
+    updateTree() {
+        return axios.get(BASE_URL+ '/upload');
+    }
 }
 
 export default new FileService();
