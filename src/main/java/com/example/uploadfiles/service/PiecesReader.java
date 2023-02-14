@@ -3,6 +3,7 @@ package com.example.uploadfiles.service;
 import com.example.uploadfiles.model.Drawing;
 import com.example.uploadfiles.model.Piece;
 import com.example.uploadfiles.repository.PieceRepository;
+import com.example.uploadfiles.service.utils.DocxReader;
 import com.example.uploadfiles.service.utils.OdsReader;
 import com.example.uploadfiles.service.utils.Reader;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,9 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -60,6 +64,26 @@ public class PiecesReader {
                 OdsReader readerOds = new OdsReader();
                 result = readerOds.readPiecesFile(path);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+
+    private String readTextData(String absolutePath) {
+        if (absolutePath.toLowerCase().endsWith(".txt")) return readTwoVariants(absolutePath);
+        if (absolutePath.toLowerCase().endsWith(".docx")) return DocxReader.readSimpleDocx(absolutePath);
+        return "";
+    }
+
+    private String readTwoVariants(String absolutePath) {
+        String result = "";
+        try {
+            String utf8 = Files.readString(new File(absolutePath).toPath(), StandardCharsets.UTF_8);
+            String win1251 = Files.readString(new File(absolutePath).toPath(), Charset.forName("CP-1251"));
+            result = String.format("В кодировке UTF-8:\n%s\n\n\nВ кодировке WINDOWS-1251:\n%s",utf8,win1251);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
