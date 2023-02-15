@@ -1,15 +1,19 @@
 import React from "react";
 import { useState } from "react";
 
-const Directory = ({ files, handlePath }) => {
+function Directory ({ files, handlePath }) {
     const [isExpanded, toggleExpanded] = useState(false);
 
+    const handleClick = () => {
+        toggleExpanded(!isExpanded);
+        handlePath(files.location)
+    };
 
     if (files.type === 'folder') {
         return (
             <div className="folder">
-                <h2 className="folder-title" onClick={() => toggleExpanded(!isExpanded)} onChange={() => handlePath(files.location)}>{files.name}</h2>
-                <button onClick={() => handlePath(files.location)}>Выбрать</button>
+                <span>{!isExpanded ? '📁 ' : '📂 '}</span>
+                <span className="folder-title" onClick={handleClick}>{files.name}</span>
                 <hr/>
                 {
                     isExpanded && files.items.map((items) => <Directory handlePath={handlePath} files={items} />)
@@ -19,7 +23,7 @@ const Directory = ({ files, handlePath }) => {
     }
     return (
         <>
-            <h3 className="file-name">{files.name}</h3><br />
+            <span className="file-name">📄 {files.name}</span><br />
             <hr/>
         </>
     )

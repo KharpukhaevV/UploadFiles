@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {Navigate} from 'react-router-dom';
 import FileService from '../services/FileService';
 import Directory from "./Directory";
-import catalog from "../static/catalog.json"
+import DragAndDrop from "./DragAndDrop";
 
 
 class UploadImageComponent extends Component {
@@ -10,6 +9,7 @@ class UploadImageComponent extends Component {
         super(props);
         this.state = {
             files: null,
+            dirName: '',
             fileUploaded: null,
             path: '',
             tree: null,
@@ -26,6 +26,7 @@ class UploadImageComponent extends Component {
     }
 
     onFileChange = (event) => {
+        console.log(event.target.files)
         this.setState({
             files: event.target.files
         });
@@ -45,6 +46,7 @@ class UploadImageComponent extends Component {
             formData.append('files', this.state.files[key]);
         }
         formData.append('path', this.state.path)
+        formData.append('dirName', this.state.dirName)
 
         FileService.uploadImage(formData).then((response) => {
             console.log(response.data);
@@ -55,17 +57,19 @@ class UploadImageComponent extends Component {
         });
     }
 
+    handleDropFiles = (e) => {
+        console.log(e.name)
+        console.log(e.files)
+        this.setState({
+            files: e.files,
+            dirName: e.name
+        });
+    }
+
     render() {
         return (
             <div className='row'>
-                <h4>{this.state.path}</h4>
                 <div className='row'>
-                    {this.state.fileUploaded ?
-                        <div className='card col-6'>
-                            <h3>{this.state.message}</h3>
-                        </div>:
-                        <div></div>
-                    }
                     <div className='card col-7'>
                         <div className="spacing">
                             {this.state.tree != null ?
@@ -78,15 +82,21 @@ class UploadImageComponent extends Component {
                     <div className='card col-md-5'>
                         <div className='card-body'>
                             <form onSubmit={this.onUpload}>
-                                <div>
-                                    <label>Select a file:</label>
-                                    <input className='mx-2' id="input-file-upload" type='file' name='file' directory=""
-                                           webkitdirectory="" onChange={this.onFileChange} multiple></input>
-                                </div>
-                                <button className='btn btn-success btn-sm mt-3' type='submit'
-                                        disabled={!this.state.files}>Загрузить
-                                </button>
+                                <span>Папка загрузки: {this.state.path}</span>
+                                <hr/>
+                                <DragAndDrop onFilesDrop={this.handleDropFiles}/>
+                                {!(this.state.files && this.state.path)?
+                                    <button className='btn btn-success btn-sm mt-3' type='submit'
+                                            disabled={true}>Загрузить
+                                    </button> :
+                                    <button className='btn btn-success btn-sm mt-3' type='submit'
+                                            disabled={false}>Загрузить
+                                    </button>
+                                }
                             </form>
+                            {this.state.fileUploaded ?
+                                <h4>{this.state.message}</h4> : <h4></h4>
+                            }
                         </div>
                     </div>
                 </div>

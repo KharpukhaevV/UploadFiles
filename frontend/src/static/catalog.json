@@ -12,6 +12,81 @@
       "type" : "file",
       "items" : null
     }, {
+      "name" : "10.4-01",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3).pdf",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/Т3.10.3-03Э - Система выпуска (Т3).pdf",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3).cdw.bak",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/Т3.10.3-03Э - Система выпуска (Т3).cdw.bak",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3).cdw",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/Т3.10.3-03Э - Система выпуска (Т3).cdw",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "ПХ.07.40.00.600 Жгут моторный с ECU.JPG",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/ПХ.07.40.00.600 Жгут моторный с ECU.JPG",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "ПХ.07.40.00.600 Жгут моторный с ECU_0.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/ПХ.07.40.00.600 Жгут моторный с ECU_0.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Thumbs.db",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/Thumbs.db",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Примечание Т3.10.3-03Э.docx",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/10.4-01/Примечание Т3.10.3-03Э.docx",
+        "type" : "file",
+        "items" : null
+      } ]
+    }, {
+      "name" : "01.03",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.03",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "01.03 - Кабина.xlsx",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.03/01.03 - Кабина.xlsx",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "01.03 Электросхема",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.03/01.03 Электросхема",
+        "type" : "folder",
+        "items" : [ {
+          "name" : "ПХ.06.40.00.110 Жгут кабинный под нижний испаритель_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.03/01.03 Электросхема/ПХ.06.40.00.110 Жгут кабинный под нижний испаритель_0.jpg",
+          "type" : "file",
+          "items" : null
+        } ]
+      }, {
+        "name" : "01.03 - Кабина(1).jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.03/01.03 - Кабина(1).jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "01.03 - Кабина(2).jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.03/01.03 - Кабина(2).jpg",
+        "type" : "file",
+        "items" : null
+      } ]
+    }, {
       "name" : "Комплект переоборудования на шкив без муфты.xlsx",
       "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/Комплект переоборудования на шкив без муфты.xlsx",
       "type" : "file",
@@ -21,6 +96,66 @@
       "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/Комплект переоборудования на шкив без муфты.cdw",
       "type" : "file",
       "items" : null
+    }, {
+      "name" : "09.01",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "09.01 Рама_0.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Рама_0.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "09.01 Электросхема",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Электросхема",
+        "type" : "folder",
+        "items" : [ {
+          "name" : "Жгут рамный силовая часть.JPG",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Электросхема/Жгут рамный силовая часть.JPG",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Таблица присоединений_1.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Электросхема/Таблица присоединений_1.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Жгут рамный силовая часть_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Электросхема/Жгут рамный силовая часть_0.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Таблица присоединений_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Электросхема/Таблица присоединений_0.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "ПХ.07.40.00.500 Жгут рамный_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Электросхема/ПХ.07.40.00.500 Жгут рамный_0.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "ПХ.07.40.00.500 Жгут рамный.JPG",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/09.01/09.01 Электросхема/ПХ.07.40.00.500 Жгут рамный.JPG",
+          "type" : "file",
+          "items" : null
+        } ]
+      } ]
+    }, {
+      "name" : "01.02",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.02",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "Кабина.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.02/Кабина.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Кабина.xlsx",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/01.02/Кабина.xlsx",
+        "type" : "file",
+        "items" : null
+      } ]
     }, {
       "name" : "Thumbs.db",
       "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты/Thumbs.db",
@@ -41,6 +176,26 @@
         "type" : "file",
         "items" : null
       }, {
+        "name" : "ДО.01.2-01 Химсистема заправочной помпы (Т3)",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/ДО.01.2-01 Химсистема заправочной помпы (Т3)",
+        "type" : "folder",
+        "items" : [ {
+          "name" : "Электросхема",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/ДО.01.2-01 Химсистема заправочной помпы (Т3)/Электросхема",
+          "type" : "folder",
+          "items" : [ {
+            "name" : "Барс химия.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/ДО.01.2-01 Химсистема заправочной помпы (Т3)/Электросхема/Барс химия.jpg",
+            "type" : "file",
+            "items" : null
+          } ]
+        }, {
+          "name" : "ДО.01.2-01 Химсистема заправочной помпы (Т3).xlsx",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/ДО.01.2-01 Химсистема заправочной помпы (Т3)/ДО.01.2-01 Химсистема заправочной помпы (Т3).xlsx",
+          "type" : "file",
+          "items" : null
+        } ]
+      }, {
         "name" : "Рамный.JPG",
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/Рамный.JPG",
         "type" : "file",
@@ -60,6 +215,21 @@
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/Жгут тахометра.JPG",
         "type" : "file",
         "items" : null
+      }, {
+        "name" : "01.50-Низкая",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/01.50-Низкая",
+        "type" : "folder",
+        "items" : [ {
+          "name" : "01.50 Кабина Т-2.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/01.50-Низкая/01.50 Кабина Т-2.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "01.50 Кабина.xlsx",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/01.50-Низкая/01.50 Кабина.xlsx",
+          "type" : "file",
+          "items" : null
+        } ]
       }, {
         "name" : "Thumbs.db",
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Электросхемы/Thumbs.db",
@@ -555,23 +725,8 @@
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/01 Кабина/01.01",
         "type" : "folder",
         "items" : [ {
-          "name" : "Кабина.cdw",
-          "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/01 Кабина/01.01/Кабина.cdw",
-          "type" : "file",
-          "items" : null
-        }, {
           "name" : "Кабина.jpg",
           "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/01 Кабина/01.01/Кабина.jpg",
-          "type" : "file",
-          "items" : null
-        }, {
-          "name" : "Кабина.cdw.bak",
-          "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/01 Кабина/01.01/Кабина.cdw.bak",
-          "type" : "file",
-          "items" : null
-        }, {
-          "name" : "Thumbs.db",
-          "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/01 Кабина/01.01/Thumbs.db",
           "type" : "file",
           "items" : null
         }, {
@@ -1270,6 +1425,26 @@
           "type" : "file",
           "items" : null
         } ]
+      } ]
+    }, {
+      "name" : "Т3.10.3-03Э",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Т3.10.3-03Э",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Т1М/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+        "type" : "file",
+        "items" : null
       } ]
     }, {
       "name" : "Переоборудование",
@@ -11589,8 +11764,8 @@
           "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/10 Двигатель/10.3 Система выпуска/Т3.10.3-03Э",
           "type" : "folder",
           "items" : [ {
-            "name" : "Т3.10.3-03Э - Система выпуска (Т3).pdf",
-            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/10 Двигатель/10.3 Система выпуска/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3).pdf",
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/10 Двигатель/10.3 Система выпуска/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
             "type" : "file",
             "items" : null
           }, {
@@ -11599,18 +11774,8 @@
             "type" : "file",
             "items" : null
           }, {
-            "name" : "Т3.10.3-03Э - Система выпуска (Т3).cdw.bak",
-            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/10 Двигатель/10.3 Система выпуска/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3).cdw.bak",
-            "type" : "file",
-            "items" : null
-          }, {
-            "name" : "Т3.10.3-03Э - Система выпуска (Т3).cdw",
-            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/10 Двигатель/10.3 Система выпуска/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3).cdw",
-            "type" : "file",
-            "items" : null
-          }, {
-            "name" : "Thumbs.db",
-            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/10 Двигатель/10.3 Система выпуска/Т3.10.3-03Э/Thumbs.db",
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/10 Двигатель/10.3 Система выпуска/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
             "type" : "file",
             "items" : null
           }, {
@@ -16156,6 +16321,11 @@
         "type" : "file",
         "items" : null
       } ]
+    }, {
+      "name" : "Т3.10.3-03Э - Система выпуска (Т3).pdf",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/Т3.10.3-03Э - Система выпуска (Т3).pdf",
+      "type" : "file",
+      "items" : null
     }, {
       "name" : "ЭКСП-Т2-01.1 (машина №2093)",
       "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/ЭКСП-Т2-01.1 (машина №2093)",
@@ -31257,6 +31427,21 @@
         } ]
       } ]
     }, {
+      "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/Т3.10.3-03Э - Система выпуска (Т3).ods",
+      "type" : "file",
+      "items" : null
+    }, {
+      "name" : "Т3.10.3-03Э - Система выпуска (Т3).cdw.bak",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/Т3.10.3-03Э - Система выпуска (Т3).cdw.bak",
+      "type" : "file",
+      "items" : null
+    }, {
+      "name" : "Т3.10.3-03Э - Система выпуска (Т3).cdw",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/Т3.10.3-03Э - Система выпуска (Т3).cdw",
+      "type" : "file",
+      "items" : null
+    }, {
       "name" : "13 Навигационное оборудование",
       "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/13 Навигационное оборудование",
       "type" : "folder",
@@ -31896,6 +32081,16 @@
           } ]
         } ]
       } ]
+    }, {
+      "name" : "Thumbs.db",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/Thumbs.db",
+      "type" : "file",
+      "items" : null
+    }, {
+      "name" : "Примечание Т3.10.3-03Э.docx",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Т2/Примечание Т3.10.3-03Э.docx",
+      "type" : "file",
+      "items" : null
     } ]
   }, {
     "name" : "ExpAccSchemeKB.xlsx",

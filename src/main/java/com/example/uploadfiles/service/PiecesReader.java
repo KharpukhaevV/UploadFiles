@@ -71,7 +71,7 @@ public class PiecesReader {
     }
 
 
-    private String readTextData(String absolutePath) {
+    public String readTextData(String absolutePath) {
         if (absolutePath.toLowerCase().endsWith(".txt")) return readTwoVariants(absolutePath);
         if (absolutePath.toLowerCase().endsWith(".docx")) return DocxReader.readSimpleDocx(absolutePath);
         return "";

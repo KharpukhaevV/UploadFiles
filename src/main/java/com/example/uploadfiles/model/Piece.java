@@ -16,7 +16,7 @@ public class Piece {
     private String comment;
     private Integer x;
     private Integer y;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name="drawing_id")
     @JsonBackReference(value="piece-drawing")
     private Drawing drawing;

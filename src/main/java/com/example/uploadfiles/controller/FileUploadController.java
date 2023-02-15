@@ -1,23 +1,14 @@
 package com.example.uploadfiles.controller;
 
-import com.example.uploadfiles.exception.FileNotSupportedException;
 import com.example.uploadfiles.model.DirectoryTree;
-import com.example.uploadfiles.model.FileDetails;
-import com.example.uploadfiles.model.Part;
-import com.example.uploadfiles.payload.FileUploadResponse;
 import com.example.uploadfiles.repository.DirectoryTreeRepository;
-import com.example.uploadfiles.repository.PartRepository;
 import com.example.uploadfiles.service.FileUploadService;
-import jakarta.servlet.http.HttpServletRequest;
+import com.example.uploadfiles.service.ProcessingPart;
 import net.minidev.json.JSONObject;
 import net.minidev.json.parser.JSONParser;
 import net.minidev.json.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.Resource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -25,9 +16,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.UncheckedIOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Map;
 
 @RestController
 @RequestMapping(value = "file")
@@ -38,12 +27,8 @@ public class FileUploadController {
     private FileUploadService fileUploadService;
     @Autowired
     private DirectoryTreeRepository directoryTreeRepository;
-
-    @GetMapping
-    @ResponseStatus(code = HttpStatus.OK)
-    public List<FileDetails> getAllFiles() {
-        return this.fileUploadService.getAllFiles();
-    }
+    @Autowired
+    private ProcessingPart processingPart;
 
     @GetMapping(value = "/upload")
     @ResponseStatus(code = HttpStatus.OK)
@@ -61,29 +46,31 @@ public class FileUploadController {
 
 
     @PostMapping(value = "/upload")
-    public String uploadFiles(@RequestParam("files") MultipartFile[] files, @RequestParam("path") String path) {
+    public String uploadFiles(@RequestParam("files") MultipartFile[] files, @RequestParam("path") String path, @RequestParam("dirName") String dirName) {
         String message = "Файлы успешно загружены.";
+        System.out.println(dirName);
         try {
-            System.out.println(path);
+            String dirPath = "";
             boolean flagDrawing = false;
             boolean flagSpecification = false;
-            for (MultipartFile file : files) {
-                if (file.getOriginalFilename().toLowerCase().contains("jpg") ||
-                        file.getOriginalFilename().toLowerCase().contains("pdf")) {
-                    flagDrawing = true;
+            try {
+                for (MultipartFile file : files) {
+                    if (file.getOriginalFilename().toLowerCase().contains("jpg") ||
+                            file.getOriginalFilename().toLowerCase().contains("pdf")) {
+                        flagDrawing = true;
+                        dirPath = fileUploadService.uploadFile(file, path, dirName);
+                    } else if (file.getOriginalFilename().toLowerCase().contains("xls") ||
+                            file.getOriginalFilename().toLowerCase().contains("xlsx") ||
+                            file.getOriginalFilename().toLowerCase().contains("ods")) {
+                        flagSpecification = true;
+                        dirPath = fileUploadService.uploadFile(file, path, dirName);
+                    }
                 }
-                if (file.getOriginalFilename().toLowerCase().contains("xls") ||
-                        file.getOriginalFilename().toLowerCase().contains("xlsx") ||
-                        file.getOriginalFilename().toLowerCase().contains("ods")) {
-                    flagSpecification = true;
-                }
-                try {
-                    //TODO: Изменить порядок, сначало сохраняю и только потом в отдельном методе смотрю в папку и сохраняю в бд
-                    fileUploadService.uploadFile(file, path);
-                } catch (IOException e) {
-                    throw new UncheckedIOException(e);
-                }
+            } catch (IOException e) {
+                throw new UncheckedIOException(e);
             }
+
+            processingPart.process(dirPath);
 
             if (!flagDrawing) {
                 message = message + "\nНехватает чертежа.";
@@ -95,32 +82,9 @@ public class FileUploadController {
 
             return message;
 
-        } catch (UncheckedIOException | FileNotSupportedException e) {
+        } catch (UncheckedIOException e) {
             message = e.getMessage();
             return message;
-        }
-    }
-
-    @GetMapping("/download/{fileName:.+}")
-    public ResponseEntity<Object> downloadFile(@PathVariable String fileName,
-                                               HttpServletRequest request) {
-
-        try {
-            Resource resource = this.fileUploadService.fetchFileAsResource(fileName);
-            String contentType =
-                    request.getServletContext().getMimeType(resource.getFile().getAbsolutePath());
-
-            if (contentType == null) {
-                contentType = "application/octet-stream";
-            }
-
-            return ResponseEntity.ok()
-                    .contentType(MediaType.parseMediaType(contentType))
-                    .header(HttpHeaders.CONTENT_DISPOSITION,
-                            "attachment; filename=\"" + resource.getFilename() + "\"")
-                    .body(resource);
-        } catch (IOException ex) {
-            return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
 }
