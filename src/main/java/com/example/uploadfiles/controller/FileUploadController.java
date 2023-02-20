@@ -1,7 +1,14 @@
 package com.example.uploadfiles.controller;
 
 import com.example.uploadfiles.model.DirectoryTree;
+import com.example.uploadfiles.model.Drawing;
+import com.example.uploadfiles.model.Part;
+import com.example.uploadfiles.model.Piece;
 import com.example.uploadfiles.repository.DirectoryTreeRepository;
+import com.example.uploadfiles.repository.DrawingRepository;
+import com.example.uploadfiles.repository.PartRepository;
+import com.example.uploadfiles.repository.PieceRepository;
+import com.example.uploadfiles.service.DirectoryStructureToJson;
 import com.example.uploadfiles.service.FileUploadService;
 import com.example.uploadfiles.service.ProcessingPart;
 import net.minidev.json.JSONObject;
@@ -12,23 +19,30 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.UncheckedIOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Map;
 
 @RestController
 @RequestMapping(value = "file")
 @CrossOrigin(origins = "http://localhost:3000")
 public class FileUploadController {
-
+    @Autowired
+    private DirectoryStructureToJson directoryStructureToJson;
     @Autowired
     private FileUploadService fileUploadService;
     @Autowired
     private DirectoryTreeRepository directoryTreeRepository;
     @Autowired
+    private PartRepository partRepository;
+    @Autowired
     private ProcessingPart processingPart;
+    @Autowired
+    private DrawingRepository drawingRepository;
+    @Autowired
+    private PieceRepository pieceRepository;
 
     @GetMapping(value = "/upload")
     @ResponseStatus(code = HttpStatus.OK)
@@ -44,6 +58,29 @@ public class FileUploadController {
         return json;
     }
 
+    @PostMapping(value = "/create_dir")
+    public void createDir(@RequestParam("dirName") String dirName, @RequestParam("path") String path) throws IOException {
+        Path newPath = Paths.get(path + "/" + dirName);
+        if (!Files.exists(newPath)) {
+            Files.createDirectories(newPath);
+        }
+        directoryStructureToJson.updateTree();
+    }
+
+    @PostMapping(value = "/delete_dir")
+    public void deleteDir(@RequestParam("dirName") String dirName, @RequestParam("path") String path) {
+        Path newPath = Paths.get(path + "/" + dirName);
+        File file = new File(newPath.toUri());
+        if (Files.exists(newPath)) {
+            if (fileUploadService.deleteDirectory(file)) {
+                Part part = partRepository.findByPath(file.getAbsolutePath());
+                if (part != null) {
+                    partRepository.delete(part);
+                }
+                directoryStructureToJson.updateTree();
+            }
+        }
+    }
 
     @PostMapping(value = "/upload")
     public String uploadFiles(@RequestParam("files") MultipartFile[] files, @RequestParam("path") String path, @RequestParam("dirName") String dirName) {
@@ -79,6 +116,7 @@ public class FileUploadController {
                 message = message + "\nНехватает спецификации.";
             }
 
+            directoryStructureToJson.updateTree();
 
             return message;
 

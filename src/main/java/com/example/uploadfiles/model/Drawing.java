@@ -13,11 +13,11 @@ public class Drawing {
     @GeneratedValue(strategy = GenerationType.IDENTITY) Long id;
     private String namePhysical;
     private String nameOriginal;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "part_id")
     @JsonBackReference(value = "drawing-part")
     private Part part;
-    @OneToMany(mappedBy = "drawing", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "drawing", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     @JsonManagedReference(value = "piece-drawing")
     private Set<Piece> pieces = new HashSet<>();
     private String specfile;

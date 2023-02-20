@@ -19,7 +19,7 @@ public class Part {
     private String groupName;
     private int sortNumber;
 
-    @OneToMany(mappedBy="part", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy="part", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     @JsonManagedReference(value = "drawing-part")
     private Set<Drawing> drawings = new HashSet<>();
 

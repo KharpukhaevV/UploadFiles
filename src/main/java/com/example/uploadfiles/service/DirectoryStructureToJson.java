@@ -24,6 +24,7 @@ public class DirectoryStructureToJson {
     @Autowired
     private DirectoryTreeRepository directoryTreeRepository;
 
+
     public void updateTree() {
         try {
             Node node = getNode(new File("/home/vladimir/IdeaProjects/catalogdata"));

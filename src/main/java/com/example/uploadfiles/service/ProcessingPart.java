@@ -16,11 +16,11 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 @Service
+@Transactional
 public class ProcessingPart {
-    @Autowired
-    private DirectoryStructureToJson directoryStructureToJson;
     @Autowired
     private PartRepository partRepository;
     @Autowired
@@ -38,8 +38,6 @@ public class ProcessingPart {
             if (arrFiles != null) {
                 List<File> files = Arrays.asList(arrFiles);
                 updateDrawing(files, part);
-
-                directoryStructureToJson.updateTree();
             }
         }
 
@@ -57,7 +55,6 @@ public class ProcessingPart {
         }
     }
 
-    @Transactional
     public void updateDrawing(List<File> files, Part part) {
         String specFileName = "";
         for (File file : files) {
@@ -69,26 +66,25 @@ public class ProcessingPart {
         for (File file : files) {
             if (!file.isDirectory()) {
                 Drawing drawing = drawingRepository.findByNameOriginalAndPart(file.getName(), part);
-                if (drawing != null) {
-                    drawingRepository.deleteById(drawing.getId());
-                }
-                Drawing newDrawing = new Drawing();
-                newDrawing.setNameOriginal(file.getName());
-                //TODO: Проверять вложенные папки
-                newDrawing.setNamePhysical(file.getName());
-                newDrawing.setPart(part);
-                if (file.getName().endsWith(".jpg")) {
-                    newDrawing.setSpecfile(specFileName);
-                } else if (file.getName().endsWith("docx")) {    //Возможо не только .docx
-                    newDrawing.setTextData(piecesReader.readTextData(file.getAbsolutePath()));
-                } else if (file.getName().endsWith(".xlsx") || file.getName().endsWith("xls") || file.getName().endsWith("ods")) {
-                    for (Piece piece : piecesReader.readExcelPiecesFile(file.getPath())) {
-                        piece.setDrawing(newDrawing);
-                        pieceRepository.save(piece);
-                    }
-                }
-                drawingRepository.save(newDrawing);
+                drawingRepository.save(setDrawingFields(Objects.requireNonNullElseGet(drawing, Drawing::new), file, specFileName, part));
             }
         }
+    }
+
+    private Drawing setDrawingFields(Drawing drawing, File file, String specFileName, Part part) {
+        drawing.setNameOriginal(file.getName());
+        drawing.setNamePhysical(file.getName());
+        drawing.setPart(part);
+        if (file.getName().endsWith(".jpg")) {
+            drawing.setSpecfile(specFileName);
+        } else if (file.getName().endsWith("docx")) {    //Возможо не только .docx
+            drawing.setTextData(piecesReader.readTextData(file.getAbsolutePath()));
+        } else if (file.getName().endsWith(".xlsx") || file.getName().endsWith("xls") || file.getName().endsWith("ods")) {
+            for (Piece piece : piecesReader.readExcelPiecesFile(file.getPath())) {
+                piece.setDrawing(drawing);
+                pieceRepository.save(piece);
+            }
+        }
+        return drawing;
     }
 }

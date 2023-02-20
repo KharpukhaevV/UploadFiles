@@ -24,8 +24,8 @@ public class FileUploadService {
 
 
     public String uploadFile(MultipartFile file, String serverPath, String dirName) throws IOException {
-        Path UPLOAD_PATH = Paths.get(serverPath + dirName);
-        String partPath = serverPath + dirName;
+        Path UPLOAD_PATH = Paths.get(serverPath + "/" + dirName);
+        String partPath = serverPath + "/" + dirName;
         if (!Files.exists(UPLOAD_PATH)) {
             Files.createDirectories(UPLOAD_PATH);
         }
@@ -84,6 +84,18 @@ public class FileUploadService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+    public boolean deleteDirectory(File directoryToBeDeleted) {
+        System.out.println(directoryToBeDeleted);
+        File[] allContents = directoryToBeDeleted.listFiles();
+        if (allContents != null) {
+            for (File file : allContents) {
+                deleteDirectory(file);
+            }
+        }
+        return directoryToBeDeleted.delete();
     }
 }
 

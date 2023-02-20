@@ -3,6 +3,156 @@
   "location" : "/home/vladimir/IdeaProjects/catalogdata",
   "type" : "folder",
   "items" : [ {
+    "name" : "Новая папка",
+    "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка",
+    "type" : "folder",
+    "items" : [ {
+      "name" : "Новая папка",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "123123231",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231",
+        "type" : "folder",
+        "items" : [ {
+          "name" : "123123231",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231/123123231",
+          "type" : "folder",
+          "items" : [ {
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+            "type" : "file",
+            "items" : null
+          }, {
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3).ods",
+            "type" : "file",
+            "items" : null
+          }, {
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+            "type" : "file",
+            "items" : null
+          } ]
+        }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231/Т3.10.3-03Э - Система выпуска (Т3).ods",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/Новая папка/123123231/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+          "type" : "file",
+          "items" : null
+        } ]
+      } ]
+    }, {
+      "name" : "123123231",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231",
+      "type" : "folder",
+      "items" : [ {
+        "name" : "123123231",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231",
+        "type" : "folder",
+        "items" : [ {
+          "name" : "123123231",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231",
+          "type" : "folder",
+          "items" : [ {
+            "name" : "123123231",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231",
+            "type" : "folder",
+            "items" : [ {
+              "name" : "123123231",
+              "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231/123123231",
+              "type" : "folder",
+              "items" : [ {
+                "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+                "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+                "type" : "file",
+                "items" : null
+              }, {
+                "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+                "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3).ods",
+                "type" : "file",
+                "items" : null
+              }, {
+                "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+                "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+                "type" : "file",
+                "items" : null
+              } ]
+            }, {
+              "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+              "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+              "type" : "file",
+              "items" : null
+            }, {
+              "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+              "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3).ods",
+              "type" : "file",
+              "items" : null
+            }, {
+              "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+              "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+              "type" : "file",
+              "items" : null
+            } ]
+          }, {
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+            "type" : "file",
+            "items" : null
+          }, {
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3).ods",
+            "type" : "file",
+            "items" : null
+          }, {
+            "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+            "type" : "file",
+            "items" : null
+          } ]
+        }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3).ods",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/123123231/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+          "type" : "file",
+          "items" : null
+        } ]
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Новая папка/123123231/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+        "type" : "file",
+        "items" : null
+      } ]
+    } ]
+  }, {
     "name" : "Комплект для без муфты",
     "location" : "/home/vladimir/IdeaProjects/catalogdata/Комплект для без муфты",
     "type" : "folder",
@@ -2243,6 +2393,26 @@
             "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/01 Кабина/01.01/01 электросхема/ПХ.07.40.00.200 Жгут кабины нижний.pdf",
             "type" : "file",
             "items" : null
+          }, {
+            "name" : "Т3.10.3-03Э",
+            "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/01 Кабина/01.01/01 электросхема/Т3.10.3-03Э",
+            "type" : "folder",
+            "items" : [ {
+              "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+              "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/01 Кабина/01.01/01 электросхема/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+              "type" : "file",
+              "items" : null
+            }, {
+              "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+              "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/01 Кабина/01.01/01 электросхема/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3).ods",
+              "type" : "file",
+              "items" : null
+            }, {
+              "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+              "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/01 Кабина/01.01/01 электросхема/Т3.10.3-03Э/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+              "type" : "file",
+              "items" : null
+            } ]
           }, {
             "name" : "ПХ.07.40.00.400-01 Жгут приборный.JPG",
             "location" : "/home/vladimir/IdeaProjects/catalogdata/Т3/01 Кабина/01.01/01 электросхема/ПХ.07.40.00.400-01 Жгут приборный.JPG",
@@ -15942,6 +16112,21 @@
         } ]
       } ]
     }, {
+      "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+      "type" : "file",
+      "items" : null
+    }, {
+      "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т3.10.3-03Э - Система выпуска (Т3).ods",
+      "type" : "file",
+      "items" : null
+    }, {
+      "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+      "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+      "type" : "file",
+      "items" : null
+    }, {
       "name" : "Т2",
       "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2",
       "type" : "folder",
@@ -15950,6 +16135,16 @@
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.01 - Заправочная помпа (Т2)",
         "type" : "folder",
         "items" : [ {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.01 - Заправочная помпа (Т2)/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.01 - Заправочная помпа (Т2)/Т3.10.3-03Э - Система выпуска (Т3).ods",
+          "type" : "file",
+          "items" : null
+        }, {
           "name" : "ДО.01.1 Гидросхема заправочной помпы (Т2)",
           "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.01 - Заправочная помпа (Т2)/ДО.01.1 Гидросхема заправочной помпы (Т2)",
           "type" : "folder",
@@ -16015,6 +16210,11 @@
             } ]
           } ]
         }, {
+          "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+          "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.01 - Заправочная помпа (Т2)/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+          "type" : "file",
+          "items" : null
+        }, {
           "name" : "ДО.01.2 Химсистема заправочной помпы (Т2)",
           "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.01 - Заправочная помпа (Т2)/ДО.01.2 Химсистема заправочной помпы (Т2)",
           "type" : "folder",
@@ -16066,6 +16266,16 @@
           } ]
         } ]
       }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Т3.10.3-03Э - Система выпуска (Т3)_0.jpg",
+        "type" : "file",
+        "items" : null
+      }, {
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Т3.10.3-03Э - Система выпуска (Т3).ods",
+        "type" : "file",
+        "items" : null
+      }, {
         "name" : "ДО.04 - РУД",
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.04 - РУД",
         "type" : "folder",
@@ -16101,30 +16311,10 @@
           } ]
         } ]
       }, {
-        "name" : "Вибромотор бункера",
-        "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера",
-        "type" : "folder",
-        "items" : [ {
-          "name" : "ПХ.06.23.01.630 - Установка вибратора_0.jpg",
-          "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/ПХ.06.23.01.630 - Установка вибратора_0.jpg",
-          "type" : "file",
-          "items" : null
-        }, {
-          "name" : "Электросхема",
-          "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/Электросхема",
-          "type" : "folder",
-          "items" : [ {
-            "name" : "Вибромотор_1.jpg",
-            "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/Электросхема/Вибромотор_1.jpg",
-            "type" : "file",
-            "items" : null
-          }, {
-            "name" : "Вибромотор_0.jpg",
-            "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Вибромотор бункера/Электросхема/Вибромотор_0.jpg",
-            "type" : "file",
-            "items" : null
-          } ]
-        } ]
+        "name" : "Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+        "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/Т3.10.3-03Э - Система выпуска (Т3)_1.jpg",
+        "type" : "file",
+        "items" : null
       }, {
         "name" : "ДО.02 - Датчик скорости ленты Field-IQ (Т2)",
         "location" : "/home/vladimir/IdeaProjects/catalogdata/Доп.оборудование/Т2/ДО.02 - Датчик скорости ленты Field-IQ (Т2)",
@@ -16220,41 +16410,6 @@
             "items" : null
           } ]
         } ]
-      } ]
-    } ]
-  }, {
-    "name" : "10.1-01",
-    "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01",
-    "type" : "folder",
-    "items" : [ {
-      "name" : "10.1-01 Система охлаждения (Т3).ods",
-      "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01 Система охлаждения (Т3).ods",
-      "type" : "file",
-      "items" : null
-    }, {
-      "name" : "10.1-01",
-      "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01",
-      "type" : "folder",
-      "items" : [ {
-        "name" : "10.1-01 Система охлаждения (Т3).ods",
-        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3).ods",
-        "type" : "file",
-        "items" : null
-      }, {
-        "name" : "10.1-01 Система охлаждения (Т3)_1.jpg",
-        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3)_1.jpg",
-        "type" : "file",
-        "items" : null
-      }, {
-        "name" : "10.1-01 Система охлаждения (Т3)_2.jpg",
-        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3)_2.jpg",
-        "type" : "file",
-        "items" : null
-      }, {
-        "name" : "10.1-01 Система охлаждения (Т3)_0.jpg",
-        "location" : "/home/vladimir/IdeaProjects/catalogdata/10.1-01/10.1-01/10.1-01 Система охлаждения (Т3)_0.jpg",
-        "type" : "file",
-        "items" : null
       } ]
     } ]
   }, {

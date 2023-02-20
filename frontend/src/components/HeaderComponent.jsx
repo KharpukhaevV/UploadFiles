@@ -9,9 +9,6 @@ class HeaderComponent extends Component {
                 <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
                     <Link to='/' className='navbar-brand mx-3'>Home</Link>
                     <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                        <li className='nav-item'>
-                            <Link className='nav-link active' to='/my-images'>Download</Link>
-                        </li>
                         <li className="nav-item">
                             <Link className='nav-link' to='/upload'>Upload</Link>
                         </li>
